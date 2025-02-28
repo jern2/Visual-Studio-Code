@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+</head>
+<body>
+	<h1>입력 컨트롤</h1>
+	<form method ="get" action = "ex18_ok.jsp">
+	<label for = "txt1">텍스트박스(단일라인):</label>
+
+	<input type = "text" name = "data" id="txt1" class="txt" size ="10" maxlength="5" accesskey= "s" title="이곳에 나이를 입력하세요" >
+	
+	<hr>
+
+	텍스트 박스(암호):
+	<input type= "password" name="pw">	
+	<hr>
+	
+	텍스트박스 (다중라인): 
+	<textarea style = "resize:none" cols = "50" row="5">
+	하나
+둘
+셋
+	</textarea>
+	<hr>
+	체크 박스 : <input type="checkbox" checked>
+	<hr>
+	
+	<h2>약관</h2>
+	<input Type= "checkbox" id ="cd1"> <label for="cd1">1.약관에 동의합니다.</label>
+	<label><input Type= "checkbox"> 2.약관에 동의합니다.</label>
+	
+	<hr>
+	
+	<h2>취미</h2>
+	<label><input type= "checkbox"> 수영</label>
+	<label><input type= "checkbox"> 독서</label>
+	<label><input type= "checkbox"> 코딩</label>
+	<label><input type= "checkbox"> 낮잠</label>
+	<label><input type= "checkbox"> 달리기</label>
+	
+	<hr>
+	
+	라디오버튼: 
+	<input type = "radio" name = "rb1" checked> 남자
+	<input type = "radio" name = "rb1"> 여자
+	
+	<hr>
+	
+	취미 :
+	<input type = "radio" name = "rb2"> 독서
+	<input type = "radio" name = "rb2"> 러닝
+	<input type = "radio" name = "rb2"> 맛집
+	
+	
+	
+	<hr>
+	
+	
+	셀렉트 박스:
+	<select size = "5">
+		<option>강아지</option>
+		<option selected>고양이</option>
+		<option>송아지</option>
+		
+	</select>
+
+	<hr>
+
+	셀렉트 박스:
+	<select size = "5" multiple>
+		<option>강아지</option>
+		<option >고양이</option>
+		<option>송아지</option>
+		
+	</select>
+	
+	<hr>
+	<select>
+	
+		<option>★포유류★</option>
+		<option>송아지</option>
+		<option>강아지</option>
+		<option>돼지</option>
+		
+		<option>★파충류★</option>
+		<option>뱀</option>
+		<option>거북이</option>
+		<option>이구아나</option>
+		
+		<option>★곤충★</option>
+		<option>매미</option>
+		<option>메뚜기</option>
+		<option>귀뚜라미</option>
+	</select>
+	
+
+	
+	<hr>
+	<select>
+		<outgroup label= "포유류">
+		<option>송아지</option>
+		<option>강아지</option>
+		<option>돼지</option>
+		</outgroup>
+		
+		<outgroup label= "파충류">		
+		<option>뱀</option>
+		<option>거북이</option>
+		<option>이구아나</option>
+		</outgroup>
+		
+		<outgroup label= "곤충">
+		<option>매미</option>
+		<option>메뚜기</option>
+		<option>귀뚜라미</option>
+		</outgroup>
+		
+	</select>
+	
+	<hr>
+	히든태그:<input type =”hidden” name= "age">
+	<hr> 
+	전송버튼 :<input type = "submit" value= "보내기">
+	<hr>
+	취소버튼 :<input type = "reset" value= "초기화">
+	<hr>
+	이미지 버튼 :  <input type = "image" src= "images/catty01.png">
+	<hr>
+	그냥 버튼 : <input type = "button" value= "버튼" onclick= "alert('클릭');">
+	그냥 버튼 : <input type = "button" value= "버튼" onclick= "location.href='http://naver.com';">
+	그냥 버튼 : <input type = "button" value= "버튼" onclick= "this.form.submit();">
+	그냥 버튼 : <input type = "button" value= "버튼" onclick= "this.form.reset();">
+	
+	<hr>
+	<button type = "submit">버튼 라벨</button>
+	<button type = "reset">버튼 라벨</button>
+	<button type = "button">버튼 라벨</button>
+	<hr>
+	<input type="botton" value ="<img src=''> 보안실 접근하기>
+	<hr>
+	
+	<button>
+		<img src= "images/bullet10.png">
+		보안실 접근하기
+	</button>
+	<hr>
+	
+	<input type ="button" value="글쓰기">
+	<input type = "submit" value= "보내기">
+
+	</form>
+	
+</body>
+</html>

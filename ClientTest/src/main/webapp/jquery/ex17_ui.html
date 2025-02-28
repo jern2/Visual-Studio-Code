@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <style>
+        body{
+            margin:0;
+            padding:0;
+        }
+    </style>
+</head>
+<body>
+    <!---->
+    <h1>Accordion</h1>
+    <div id ="a1">
+        <h2>HTML</h2>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, placeat optio earum adipisci accusamus ipsa iure fuga dicta distinctio nostrum harum maxime quas nulla facilis nisi natus, quia recusandae illo.</div>
+
+        <h2>CSS</h2>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque obcaecati cum voluptate perferendis ea eius quidem recusandae quam, excepturi numquam blanditiis? Magnam laudantium itaque dolore, impedit assumenda suscipit libero pariatur.</div>
+
+        <h2>JavaScript</h2>
+        <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus eos, illo cumque explicabo labore, quis itaque reprehenderit repellat, officiis voluptatem fuga harum sequi ullam nemo doloribus sunt enim ipsa ea?</div>
+    </div>
+        <h1>버튼</h1>
+        <input type="button" value="글쓰기"class='btn'>
+        <input type="button" value="취소하기"class='btn'>
+        <h1>버튼</h1>
+        <div class="btns">
+        <input type="button" value="글쓰기"class='btn'>
+        <input type="button" value="취소하기"class='btn'>
+        </div>
+        <h1>날짜</h1>
+        선택: <input type="date">
+        <hr>
+        선택: <input type="text" id="date1">
+        <hr>
+        <h1>대화상자</h1>
+        <input type="button" value="확인" id="btn1" class="btn">
+        <div id="dialog1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit cupiditate illum consequuntur magnam vero vel saepe, possimus explicabo molestias, sint nemo ullam. Sequi deleniti asperiores soluta, assumenda distinctio earum veniam?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut recusandae doloremque natus quo quam aliquam laborum eaque! Eligendi facilis sit tempora obcaecati. Quibusdam, iusto qui error quod beatae id architecto!
+        </div>
+    
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script>
+
+        $('#a1').accordion();
+        
+        $('.btn').button();
+        $('.btns').controlgroup();
+        $('#date1').datepicker({
+            dateFormat:'yy-mm-dd',
+            // minDate:-5,
+            // maxDate:5
+            // minDate:'-1M 3D',
+            // maxDate:"1M 3D"
+            minDate:'2025-02-15',
+            maxDate: '2025-02-20'
+            
+        });
+        $('#dialog1').hide();
+        $('#btn1').click(()=>{
+
+
+            $('#dialog1').dialog({
+                title:'대화상자',
+                width:300,
+                height: 400,
+                resizanle:false,
+                draggable:false,
+                modal:true,
+                buttons:{
+                    '확인': function(){
+                        
+                    },'취소': function(){
+                        $('#dialog1').dialog('close');
+                    }
+                }
+
+            });
+        });
+
+    </script>
+</body>
+</html>

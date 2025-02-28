@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #menu{
+            font-size: 0;
+            width: 630;
+            margin: 0 auto;
+            transform: translate(0px,-100px);
+        }
+        /* #menu:hover{
+            transform: translate(0px,0px);
+        } */
+        #menu > img:hover{
+            transform: translate(0px,90px);
+        }
+
+        #sub-menu{
+            /* border: 1px solid black; */
+            font-size: 0;
+            width: 126px;
+            transform: translate(-110px, 0px);
+
+        }
+
+        #sub-menu > img:hover{
+            transform: translate(100px,0px);
+        }
+
+        #sub-menu2{
+            font-size: 0;
+            width: 126px;
+            /* transform: translate(-110px, 0px); */
+            position: absolute;
+            right:-100px;
+            top: 126px;
+        }
+
+        #sub-menu2 > img:hover{
+            transform: translate(-100px,0px);
+        }
+        img{
+            transition: .7s all;
+        }
+    </style>
+</head>
+<body>
+    <!--54-->
+    <nav id="menu">
+        <img src="images/rect_icon01.png">
+        <img src="images/rect_icon02.png">
+        <img src="images/rect_icon03.png">
+        <img src="images/rect_icon04.png">
+        <img src="images/rect_icon05.png">
+    </nav>
+
+    <nav id="sub-menu">
+        <img src="images/rect_icon06.png">
+        <img src="images/rect_icon07.png">
+        <img src="images/rect_icon08.png">
+        <img src="images/rect_icon09.png">
+        <img src="images/rect_icon10.png">
+    </nav>
+
+    <nav id="sub-menu2">
+        <img src="images/rect_icon11.png">
+        <img src="images/rect_icon12.png">
+        <img src="images/rect_icon13.png">
+        <img src="images/rect_icon14.png">
+        <img src="images/rect_icon15.png">
+    </nav>
+</body>
+</html>

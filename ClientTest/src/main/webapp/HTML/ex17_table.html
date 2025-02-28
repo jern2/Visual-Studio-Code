@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+</head>
+<body>
+	<h1>테이블 </h1>
+	<table border="1" width= "200 " height="200">
+	<tr>
+		<td>1</td>
+		<td>2</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>4</td>
+	
+	</tr>
+	</table>
+	
+	<h1>테이블 (가로로 인접한 셀 병합 --아무한테나 줘도 상관없음)</h1>
+	<table border="1" width= "200 " height="200">
+	<tr>
+		<td colspan ="2">1</td>
+		
+	
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>4</td>
+	
+	</tr>
+	</table>
+	
+	<h1>테이블(세로로 인접한 셀 병합_ 무조건 위에 꺼에 span걸어야함) </h1>
+	<table border="1" width= "200 " height="200">
+	<tr>
+		<td rowspan = "2">1</td>
+		<td>2</td>
+	</tr>
+	<tr>
+		<td>4</td>
+	</tr>
+	</table>
+	
+	
+	<h1>테이블</h1>
+	<table border="1" width= "600 " height="400">
+	<tr>
+		<td>1</td>
+		<td>
+				<h3>세부 정보</h3>
+				<table border = "1" width ="300"> 
+				<tr>
+					<td>a</td>
+					<td>b</td>
+				</tr>
+				<tr>
+					<td>c</td>
+					<td>d</td>
+				</tr>
+				</table> 
+		</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>4</td>
+	</tr>
+	</table>
+	
+	<h1>테이블 </h1>
+	<table border="1" width= "200 ">
+	<!-- <tr>
+		<td>번호</td>
+		<td>이름</td>
+	</tr> -->
+	<tr>
+		<th></th>
+		<th></th>
+	
+	</tr>
+	
+	<tr>
+		<td>1</td>
+		<td>홍길동</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>하하하</td>
+	</tr>
+	</table>
+	
+	
+	<h1>테이블 </h1>
+	<table border="1" width= "400 ">
+	<tr>
+		<th>번호</th>
+		<td colspan ="3">10</td>
+	</tr>
+	
+	<tr>
+		<th>이름</th>
+		<td>홍길동</td>
+		<th>아이디</th>
+		<td>hong</td>
+	</tr>
+	
+	<tr>
+		<th>자기소개</th>
+		<td colspan ="3">안녕하세요 홍길동입니다.</td>
+	</tr>
+	
+	
+	<h1>테이블 </h1>
+	<table border="1" width= "400 ">
+	<thead>
+		<tr>
+			<th>번호</th>
+			<th>이름</th>
+		</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>1</td>
+		<td>홍길동</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>하하하</td>
+	</tr>
+	</tbody>
+	<tfoot>
+		<tr>
+			<td colspan ="2"> </td> 
+		</tr>
+	</tfoot>
+	
+	</table>
+	
+</body>
+</html>

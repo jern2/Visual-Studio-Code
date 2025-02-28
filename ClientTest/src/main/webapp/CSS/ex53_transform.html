@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .subject > span:nth-child(1){
+            /* background-color: tomato; */
+            color: white;
+            font-size: 1.5rem;
+            padding: 2px 40px 5px 20px;
+            display: inline-block;
+            /* transform: skew(-35deg); */
+        }
+        .subject > span:nth-child(2){
+            /* background-color: tomato; */
+            font-size: 1.5rem;
+            padding: 2px 20px 5px 20px;
+            display: inline-block;
+            transform: skew(-35deg) translate(-20px,0px);
+        }
+
+        .red > span{
+            background-color: tomato;
+        }
+        .yellow > span{
+            background-color: gold;
+        }
+        .blue > span{
+            background-color: skyblue;
+        }
+
+        #box{
+            margin: 50px;
+        }
+        #box > span{
+            font-size: 3rem;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            border: 1px solid black;
+            display: inline-block;
+            width: 50px;
+            text-align: center;
+            border-radius: 15px;
+            transition: all .5s;
+        }
+        #box:hover > span:nth-child(odd){
+            transform: skewY(20deg);
+
+        }
+        #box:hover > span:nth-child(even){
+            transform: skewY(-20deg);
+
+        }
+
+    </style>
+</head>
+<body>
+    <!--ex53-->
+    <div class="subject red"><span>JavaScript</span><span>&nbsp;</span></div><br>
+    <div class="subject yellow"><span>HTML</span><span>&nbsp;</span></div><br>
+    <div class="subject blue"><span>CSS</span><span>&nbsp;</span></div>
+
+    <hr>
+
+    <div id="box">
+        <span>동</span>
+        <span>현</span>
+        <span>아</span>
+        <span>졸</span>
+        <span>업</span>
+        <span>축</span>
+        <span>하</span>
+        <span>해</span>
+    </div>
+
+    
+</body>
+</html>

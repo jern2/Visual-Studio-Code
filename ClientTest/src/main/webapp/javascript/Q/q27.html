@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset{
+            width: 300px;
+            margin-bottom: 20px;
+        }
+        div {
+            margin: 8px;
+        }
+    #tbl1{
+        border: 1px solid black;
+        width: 600px;
+        border-collapse: collapse;
+        
+
+    }
+    #tbl1 thead{
+        /* border: 1px solid black; */
+        background-color:gray;
+        text-align: center;
+        border-collapse: collapse;
+        block-size: auto;
+    }
+    #tbl1 th{
+        border: 1px solid black;
+    }
+    #tbl1 th:nth-child(1){
+        width: 50px;
+    }
+    #tbl1 th:nth-child(2){
+        width: 90px;
+    }
+    #tbl1 th:nth-child(3){
+        width: 60px;
+    }
+    #tbl1 th:nth-child(4){
+        width: 90px;
+    }
+    #tbl1 th:nth-child(5){
+        width: auto;
+    }
+    #tbl1 td {
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <!---->
+    <fieldset>
+        <legend>입력항목</legend>
+        <div>이름 : <input type="text" id="txtname"></div>
+        <div>나이 : <input type="number" id="txtAge" min= "20" max="60"></div>
+        <div>성별 : <input type="radio" name="rd" id="men" checked>남자
+         <input type="radio" name="rd" id="women">여자</div>
+         <div>주소: <input type="text" id="adress"> </div>
+         <div><input type="button" value="추가하기" name ></div>
+
+    </fieldset>
+    <table id="tbl1">
+        <thead id="th1">
+            <tr>
+                <th>번호</th>
+                <th>이름</th>
+                <th>나이</th>
+                <th>성별</th>
+                <th>주소</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>등록된 항목이 없습니다.</td>
+            </tr>
+        </tbody>
+    </table>
+    <script>    
+    
+
+
+    </script>
+</body>
+</html>

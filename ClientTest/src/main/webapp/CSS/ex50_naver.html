@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #list{
+            width: 700px;
+            margin: 0 auto;
+            /* outline: 1px solid black; */
+
+        }
+
+        #list .item {
+            width: 600px;
+            /* outline: 1px solid blue; */
+            margin: 15px auto;
+            border-bottom: 1px solid #CCC;
+            padding-bottom: 15px;
+        }
+        #list .item::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        #list .item img{
+            float: left;
+            width:110px;
+            height: 100px;
+            margin-right: 10px;
+        }
+        #list .item .txt {
+            float: left;
+            width: 470px;
+          
+        }
+        #list .item .txt .title{
+            font-size: 15px;
+            color: black;
+            letter-spacing: -1px;
+            font-weight: bold;
+            margin-bottom: 4px;
+        }
+        #list .item .txt .content{
+            font-size: 13px;
+            color: #767678;
+            letter-spacing: -0.5px;
+            margin-bottom: 4px;
+           
+            width: 470px;
+            white-space:  nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+        }
+        #list .item .txt .info{
+            
+        }
+        #list .item .txt .info span:nth-child(1){
+            font-size: 12px;
+            color: #929298;
+            
+        }
+        #list .item .txt .info span:nth-child(2){
+            font-size: 12px;
+            color: #3F6CDB;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <!--ex50_naver.html-->
+    <div id="list">
+        <div class="item">
+            <img src="images/news01.jpg">
+            <div class="txt">
+                <div class="title">네이버, 고용노동부와 손잡고 중장년 IT 인력 재취업 지원</div>
+                <div class="content">IT 맞춤형 재취업·창업 지원 교육 프로그램 개발 "민관 협업 모범 사례 발굴 기대" </div>
+                <div class="info">
+                    <span>매일경제</span>
+                    <span>1시간전</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="list">
+        <div class="item">
+            <img src="images/news02.jpg">
+            <div class="txt">
+                <div class="title">주요국, AI '속도전' 속…"韓 고영향 AI 규제 신중해야”</div>
+                <div class="content">미국, 중국, 유럽연합(EU) 등 주요 국가들이 인간 수준의 지능을 가진 범용인공지능</div>
+                <div class="info">
+                    <span>파이낸셜뉴스</span>
+                    <span>1시간전</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="list">
+        <div class="item">
+            <img src="images/news03.jpg">
+            <div class="txt">
+                <div class="title">내수한파 지방이 더 혹독…작년 소비감소 울산-경기-강원 순</div>
+                <div class="content">길어지는 내수 부진에 지난해 모든 시도에서 소비가 1년 전보다 줄어든 것으로</div>
+                <div class="info">
+                    <span>서울신문</span>
+                    <span>1시간전</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="list">
+        <div class="item">
+            <img src="images/news04.jpg">
+            <div class="txt">
+                <div class="title">대명소노, 티웨이 인수 가시화… ‘종합 관광 기업’ 비전 다가선 서준혁</div>
+                <div class="content">티웨이대명소노’ 탄생? 대명소노, 티웨이항공 인수 임박 항공·숙박·레저 결합… 대명소</div>
+                <div class="info">
+                    <span>디지털타임스</span>
+                    <span>1시간전</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="list">
+        <div class="item">
+            <img src="images/news05.jpg">
+            <div class="txt">
+                <div class="title">	
+                    '핑크 No. 10'… 김연경, 흥국생명 등번호 10번 '영구결번'</div>
+                <div class="content">생기원·전남대 연구팀 "강도와 유연성 동시에 확보" 한국생산기술연구원과 전남대 공동 연</div>
+                <div class="info">
+                    <span>지디넷코리아</span>
+                    <span>1시간전</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

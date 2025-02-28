@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        textarea,input{
+            display: block;
+            margin-bottom: 10px;
+
+        }
+
+        textarea{
+            width: 500px;
+            height: 300px;
+            outline: none;
+            resize: none;
+            font-size: 2rem;
+        }
+        input[type=button]{
+            padding: 20px 40px;
+        }
+    </style>
+</head>
+<body>
+    <!--ex13_mouse-event.html-->
+    <h1>마우스 관련 이벤트</h1>
+    <form name="form1">
+        <textarea name="txt1"></textarea><br>
+        <input type="button" value="버튼1" name="btn1">
+
+    </form>
+    <script>
+        var txt1 =window.document.form1.txt1;
+        var btn1 =window.document.form1.btn1;
+        
+        // txt1.onmouseover=m1;
+        // txt1.onmouseout=m2;
+        // txt1.onmousedown=m3;
+        // txt1.onmouseup=m4;
+        // txt1.onmousemove=m5;
+        txt1.onmousewheel=m6;
+
+        // txt1.value='mouseover';
+        
+        function m1(){
+            message('mouseover');
+            // window.document.body.bgColor='gold';  
+        }
+        function m2(){
+            message('mouseout');
+          
+        }
+        function m3(){
+            //message('mousedown');
+            message(event.buttons);
+
+            // if(event.buttons ==2){
+            //     alert('오른쪽 버튼 클릭 금지');
+            // }
+
+            // message(event.x+','+event.y);
+            // message(event.clientX+','+event.clientY);
+            // message(event.screenX+','+event.screenY);
+            message(event.offsetX+','+event.offsetY);
+        
+        }
+        function m4(){
+            message('mouseup');
+          
+        }
+        function m5(){
+            message('mousemove.');
+          
+        }
+        function m6(event){
+            message('mousewheel.' + event.originalEvent.deltaY);
+          
+        }
+        function message(txt) {
+            var now = new Date();
+            txt1.value = now.toLocaleTimeString() + '>' + txt + '\r\n' + txt1.value;
+        }
+        
+        
+        // btn1.onmouseover = m7;
+        btn1.onmousedown=m8;
+
+        function m7(){
+            message('버튼+마우스오버');
+        }
+
+        function m8(){
+            message('버튼+클릭');
+            // 마우스 정보 or 키보드 정보 > 모른다. 알려고 하지 말것
+            // 관련된 이벤트가 아님요;; 
+            alert(event.buttons);
+        }
+
+    </script>
+</body>
+</html>

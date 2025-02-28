@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <!--ex40_hoisting.html-->
+    <script>
+        function f1(){
+            alert('f1');
+        }
+    
+        // f1();
+       
+        f2();
+        function f2(){
+            // alert('f2');
+        }
+
+        a=10;
+        var a;
+        console.log(a)
+        // var a =10;
+
+    let 과 const hosting이 발생안한다.
+    let const는 호이스팅이발생하긴한다. 데드존안에 갇혀있어서  > TDZ (tmek)
+
+    
+    const()    let b =20;
+
+    function f3(){
+        
+
+    }
+    // m3();
+    var m3 =function(){
+        alert('m3')
+    };
+    m3();
+    const m4 =function(){
+        alert('m4')
+    };
+    </script>
+    
+</body>
+</html>

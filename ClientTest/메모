@@ -1,0 +1,44 @@
+HTML5
+ex01_basic.html		기본 태그 설명
+ex02_whitespace		공백문자처리
+ex03_				html의 구성요소
+ex04_head		기본태그	<head><meta><title></head>					(봇)
+ex05_body		기본태그	<body bgcolor='yellow' background='경로'>
+ex06_heding		제목태그	<h1 align = 'center'>						(봇)
+ex07_font		폰트태그	<font size='7' color='#010000' face='슈퍼고딕체'></font>
+ex08_p			문단태그	<p align = 'center'> </p>
+ex09_hr			태그의 속성과 값
+ex10_style		텍스트관련 태그
+ex11_list		목록		<ul><li></li><li></li><li></li></ul>
+ex12_link		링크		<a href="https://naver.com"> 링크 </a>
+ex13_tag		인라인,블럭태그 규칙
+ex14_image		이미지링크	<img src="images/dog01.jpg" alt='강아지다섯마리'>
+ex15_table		웹 정책상? 사이즈에서 가로는 고정값, 세로는 내용에따라 변할수있다
+ex16_table2
+ex17_
+ex18_
+ex19_
+ex20_
+
+
+
+http
+비연결 지향 프로토콜 (연결이 끊어져도 데이터는 유지됨)
+
+카카오톡?
+연결 지향 프로토콜
+
+
+<!-- 마크업 언어 주석 -->
+<!-- Ctrl + Shift + / -->	
+<!-- Ctrl + Shift + \ -->
+
+<태그> : 꺽쇠 = 태그
+
+
+
+
+
+
+
+

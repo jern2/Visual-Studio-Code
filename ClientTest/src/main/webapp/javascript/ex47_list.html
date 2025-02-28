@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <!--ex47_list-->
+    <script>
+        const list= ['사과','귤','배','딸기','복숭아','바나나','파인애플','수박','포도','망고'];
+
+        for (let i=0; i<list.length; i++)  {
+            console.log(list[i]);
+        }
+
+        for (let item in list){
+            console.log(item);
+        }
+
+        list.forEach(function(item){
+            console.log(item);
+        });
+
+        list.forEach(item=>console.log(item));
+
+        list.forEach((item,index)=>console.log(item,index));
+
+        //map()
+        //가공+변환
+
+        console.log(list.map(item => item.length ));
+
+        //이름 > 객체 변환(+나이20),+ 주소(서울시))
+        const names = ['홍길동','아무개','하하하'];
+        const olist1=[];
+
+        // for (let i=0; i<names.length; i++){
+        //     const o= 
+
+        // }
+        // console.log(olist1);
+
+        const olist2 = names.map(name => 
+        {
+            return{
+            name:name,
+            age:20,
+            address:'서울시'
+            };
+        });
+        console.log(olist2);
+
+        // filter
+        console.log(list.filter(item => item.length >=3));
+
+        //find()
+        //요소 검색
+        //조건 제시 > 만족하는 첫번째값 반환
+        console.log(list.find(item=>item.length>=3));
+        
+    </script>
+    
+</body>
+</html>

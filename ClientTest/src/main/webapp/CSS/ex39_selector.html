@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li:first-child{
+            color: brown;
+        }
+        li:last-child{
+            color:rgb(224, 100, 224) ;
+        }
+        li:nth-child(3){
+            color:rgb(99, 231, 214) ;
+        }
+        li:nth-last-child(3){
+            color:rgb(255, 154, 72) ;
+        }
+
+
+        li:nth-child(odd){
+            color:blue ;
+        }
+        #tbl1{
+            border:1px solid gray;
+            border-collapse: collapse;
+        }
+        #tbl1 td{
+            border: 1px solid gray;
+            padding: 5px 10px;
+        }
+        /* #tbl1 tr:first-child{
+            background-color: yellow;
+        } */
+        /* #tbl1 td:first-child{
+            background-color: yellow;
+        } */
+        #tbl1 tr:nth-child(even){
+            background-color: rgb(233, 233, 227);
+        }
+
+        #tbl1 tr:nth-child(even) td:nth-child(odd){
+        background-color: aquamarine;
+        }
+        #tbl1 tr:nth-child(odd) td:nth-child(even){
+        background-color: rgb(255, 160, 71);
+        }
+    </style>
+</head>
+<body>
+    <!--ex39_selector-->
+    <h1>목록</h1>
+
+    <ul id="list1">
+        <li>송아지</li>
+        <li>강아지</li>
+        <li>타조</li>
+        <li>닭</li>
+        <li>돼지</li>
+        <li>사슴</li>
+        <li>기린</li>
+        <li>늑대</li>
+        <li>호랑이</li>
+        <li>고양이</li>
+        <li>악어</li>
+    </ul>
+    <h1>테이블</h1>
+    <!-- table#tbl1>tr*20>td*5{아이템} -->
+    <table id="tbl1">
+        <tr>
+            <td>아이템1</td>
+            <td>아이템2</td>
+            <td>아이템3</td>
+            <td>아이템4</td>
+            <td>아이템5</td>
+        </tr>
+        <tr>
+            <td>아이템11</td>
+            <td>아이템12</td>
+            <td>아이템13</td>
+            <td>아이템14</td>
+            <td>아이템15</td>
+        </tr>
+        <tr>
+            <td>아이템21</td>
+            <td>아이템22</td>
+            <td>아이템23</td>
+            <td>아이템24</td>
+            <td>아이템25</td>
+        </tr>
+        <tr>
+            <td>아이템</td>
+            <td>아이템</td>
+            <td>아이템</td>
+            <td>아이템</td>
+            <td>아이템</td>
+        </tr>
+        <tr>
+            <td>아이템</td>
+            <td>아이템</td>
+            <td>아이템</td>
+            <td>아이템</td>
+            <td>아이템</td>
+        </tr>
+        <tr>
+            <td>아이템</td>
+            <td>아이템</td>
+            <td>아이템</td>
+            <td>아이템</td>
+            <td>아이템</td>
+        </tr>
+        <tr>
+            <td>아이템</td>
+            <td>아이템</td>
+            <td>아이템</td>
+            <td>아이템</td>
+            <td>아이템</td>
+        </tr>
+        <tr>
+            <td>아이템</td>
+            <td>아이템</td>
+            <td>아이템</td>
+            <td>아이템</td>
+            <td>아이템</td>
+        </tr>
+        <tr>
+            <td>아이템</td>
+            <td>아이템</td>
+            <td>아이템</td>
+            <td>아이템</td>
+            <td>아이템</td>
+        </tr>
+        <tr>
+            <td>아이템</td>
+            <td>아이템</td>
+            <td>아이템</td>
+            <td>아이템</td>
+            <td>아이템</td>
+        </tr>
+        <tr>
+            <td>아이템</td>
+            <td>아이템</td>
+            <td>아이템</td>
+            <td>아이템</td>
+            <td>아이템</td>
+        </tr>
+        <tr>
+            <td>아이템</td>
+            <td>아이템</td>
+            <td>아이템</td>
+            <td>아이템</td>
+            <td>아이템</td>
+        </tr>
+        <tr>
+            <td>아이템</td>
+            <td>아이템</td>
+            <td>아이템</td>
+            <td>아이템</td>
+            <td>아이템</td>
+        </tr>
+        <tr>
+            <td>아이템</td>
+            <td>아이템</td>
+            <td>아이템</td>
+            <td>아이템</td>
+            <td>아이템</td>
+        </tr>
+        <tr>
+            <td>아이템</td>
+            <td>아이템</td>
+            <td>아이템</td>
+            <td>아이템</td>
+            <td>아이템</td>
+        </tr>
+        <tr>
+            <td>아이템</td>
+            <td>아이템</td>
+            <td>아이템</td>
+            <td>아이템</td>
+            <td>아이템</td>
+        </tr>
+        <tr>
+            <td>아이템</td>
+            <td>아이템</td>
+            <td>아이템</td>
+            <td>아이템</td>
+            <td>아이템</td>
+        </tr>
+        <tr>
+            <td>아이템</td>
+            <td>아이템</td>
+            <td>아이템</td>
+            <td>아이템</td>
+            <td>아이템</td>
+        </tr>
+        <tr>
+            <td>아이템</td>
+            <td>아이템</td>
+            <td>아이템</td>
+            <td>아이템</td>
+            <td>아이템</td>
+        </tr>
+        <tr>
+            <td>아이템</td>
+            <td>아이템</td>
+            <td>아이템</td>
+            <td>아이템</td>
+            <td>아이템</td>
+        </tr>
+    </table>
+</body>
+</html>

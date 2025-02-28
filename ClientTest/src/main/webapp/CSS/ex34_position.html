@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            <html>, <body> 
+            - width: 100%;
+            - height: auto;
+        */
+        /* 
+        html, body {
+            height: 100%;
+        } 
+        */
+        body {
+            background-color: #DDDDDD;
+            margin: 0;
+        }
+        main {
+            background-color: #FFFFFF;
+            width: 800px;
+            /* 
+                %: 부모를 기준으로 하는 단위
+            */
+            height: 100vh; /* viewport height */
+            margin: 0 auto;
+
+            position: relative;
+            left: 0;
+            top: 0;
+        }
+        main > header {
+            border-bottom: 1px solid #999999;
+            padding: 30px;
+            text-align: center;
+        }
+        main > header > #search {
+            border: 1px solid #999999;
+            padding: 5px;
+            width: 400px;
+            font-size: 1.5em;
+            outline: none;
+        }
+        #list {
+            position:absolute;
+            left: 194px;
+            top:70px;
+            background-color: #FFFFFF;
+            border: 1px solid #999999;
+            width:410px;
+            display: none;
+            text-align: left;
+        }
+        #search:focus + #list{
+            display: block;
+        }
+        
+    </style>
+</head>
+<body>
+    <!--ex34_position-->
+    <main>
+        <header>
+            <input type="text" id="search">
+            <div id="list">
+                <div class ="item"> 자바</div>
+                <div class ="item"> 자바 설치</div>
+                <div class ="item"> 자바 JDK설치</div>
+                <div class ="item"> 자바 실행하기</div>
+                <div class ="item"> 자바 프로그램 구현</div>
+            </div>
+
+        </header>
+        <h1>출력내용</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente numquam tenetur ab facilis! Voluptatibus cum fugit sit nesciunt quia voluptas illum alias expedita. Voluptas distinctio fugit quam pariatur, ea dicta.Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente numquam tenetur ab facilis! Voluptatibus cum fugit sit nesciunt quia voluptas illum alias expedita. Voluptas distinctio fugit quam pariatur, ea dicta.</p>
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <!---->
+    <h1>location객체</h1>
+    <form name="form1">
+        <input type="text" name="txt1">
+        <hr>
+        <input type="button" value="버튼1" name="btn1"> 
+    </form>
+
+    <script>
+        var txt1 = window.document.form1.txt1;
+        var btn1 = window.document.form1.btn1;
+
+        btn1.onclick= m1;
+        
+        function m1() {
+            // alret(window.location.href);
+            // window.location.href = 'ex16_window.html';
+            // window.location.href = 'http://naver.com';
+
+            // window.location.reload();//새로고침(F5)
+            // window.location.assign('ex16_window.html');//페이지 이동
+
+            console.log(location.host);
+            console.log(location.port);
+            console.log(location.protocol);
+            console.log(location.pathname);
+
+
+
+        }
+        // 커뮤니티
+        // 1. 자유 게시판[F]
+        // 2. 알뜰 게시판[A]
+        // 3. 질문 게시판[Q]
+
+        window.onkeydown=m2;
+
+        function m2(){
+            // alert(event.keyCode);// 70     65     81
+            // alert(event.code)   //keyF   keyA   keyQ
+
+            if(event.keyCode==70){
+                location.href='http://naver.com';
+            }else if (event.code =='keyA') {
+                location.href='http://google.com';
+            }else if (event.code =='keyQ') {
+                location.href='http://daum.net';
+            }
+        }
+
+    
+
+    </script>
+</body>
+</html>

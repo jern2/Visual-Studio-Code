@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <!--ex09_date.html-->
+    <script>
+        var now = new Date(); // new 생성자 함수();
+        console.log(now);   
+        console.log(now.toString());   
+        console.log(typeof now); // date(X) >object(O)   
+
+
+        // 요소 추출
+        // c-get(Calendar.상수)
+        console.log(now.getYear()); //125
+        console.log(now.getFullYear());
+        console.log(now.getMonth()); //1(0부터)
+        console.log(now.getDate());
+        console.log(now.getDay()); //4(요일 일(0)~토(6))        
+        console.log(now.getHours());
+        console.log(now.getMinutes());
+        console.log(now.getSeconds());
+        console.log(now.getMilliseconds());
+        console.log(now.getTime());
+        
+        //출력 > %tF,%tT. %tA
+        console.log(now.toLocaleString());
+        console.log(now.toDateString()); //Thu Feb 20 2025
+        console.log(now.toTimeString()); //15:28:51 GMT+0900 (GMT+09:00)
+        console.log(now.toLocaleDateString()); //2025. 2. 20.
+        console.log(now.toLocaleTimeString()); //오후 3:28:45
+
+        //특정 시각 만들기
+        var christmas= new Date();
+
+        christmas.setFullYear(2025);
+        christmas.setMonth(11);
+        christmas.setDate(25);
+        christmas.setHours(18);
+        christmas.setMinutes(0);
+        christmas.setSeconds(0);
+
+        console.log(christmas);
+        var birthday = new Date(1995,1,20,12,30,0);
+
+
+        //연산
+        //시각-시간=시간
+        console.log(christmas-now); //SQL(일),javascript(ms)
+        console.log((christmas-now)/1000/60/60/24); //308일
+
+        //시각+시간=시각
+        //시각-시간=시각
+        now.setTime(now.getTime()+(100*24*60*60*1000));
+        console.log(now.toLocaleString());
+
+        
+
+
+        
+
+
+
+    </script>
+
+</body>
+</html>

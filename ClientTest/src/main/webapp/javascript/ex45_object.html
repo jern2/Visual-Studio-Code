@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <!--ex45_object.html-->
+    <script>
+        //객체 생성
+        const o1 = new Object();
+        const now = new Date();
+        const arr = new Array();
+
+        // 생성자 함수
+        //-클래스 역할을 대신
+        
+        //생성자 함수?
+        //함수명이 파스칼
+        function User( name, age){
+            this.name=name;
+            this.age=age;
+            
+        }
+        // 생성자 함수는 올바르게 선언했지만 , 호출을 잘못했다.
+        // 생성자 함수는 일반 함수 호출하듯 호출하면 안된다
+        // User('홍길동',20);
+
+        // 올바른 호출?
+        
+        const hong = new User('홍길동',20);
+        const lee = new User('이지원',25);
+
+        console.log(hong);
+        console.log(lee);
+
+        const today = new Date();
+        const list = new Array();
+        const user = new User('홍길동',20);
+        const obj={};
+        const obj2=new Object;
+        console.log(today.constructor.name)
+        console.log(list.constructor.name)
+        console.log(user.constructor.name)
+        console.log(obj.constructor.name)
+        console.log(obj2.constructor.name)
+        
+
+
+
+
+    </script>
+    
+</body>
+</html>

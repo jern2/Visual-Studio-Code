@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 30px;
+        }
+        #tbl1{
+            border: 1px solid black;
+            border-collapse: collapse;
+
+        }
+        #tbl1 td{
+            border: 1px solid black;
+            width: 126px ;
+            height: 126px;
+            /* font-size: 0; */
+        }
+        #tbl1 td img {
+            display: block;.
+        }
+
+    </style>
+</head>
+<!-- <body oncontextmenu="return false;"> -->
+<body>
+    <!---->
+    <!-- table#tbl1>tr*5>td*5 -->
+    <table id="tbl1">
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <script>
+
+       var list= document.querySelectorAll('#tbl1 td');
+        //    alert(list.length);
+        
+        for (var i=0; i<list.length; i++){
+        list[i].onmousedown=function(){
+            // alert(event.target);
+            
+            //클릭한 <td> 콘텐츠 조작
+            // <오류 조심> list[i].textContent='클릭';
+
+            // event.target.textContent='클릭';
+            // event.target.bgColor='skyblue';
+
+            if (event.button == '1'){
+                event.target.innerHTML='<img src = "images/rect_icon01.png">'
+            } else if (event.button == '2'){
+            event.target.innerHTML='<img src = "images/rect_icon02.png">'
+            };
+
+            window.oncontextmenu= function(){
+                return false;
+            };
+        }
+    }//for
+
+    
+    </script>
+   
+</body>
+</html>

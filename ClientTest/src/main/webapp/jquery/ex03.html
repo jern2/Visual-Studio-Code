@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <!--ex03-->
+    <h1>jQuery Event</h1>
+    <input type="button" value="버튼1" id="btn1" class="btn">
+    <input type="button" value="버튼2" id="btn2" class="btn">
+    <input type="button" value="버튼3" id="btn3" class="btn">
+
+
+    <script src="js/jquery-3.7.1.js"></script>
+    <script>
+        // const $= jQuery;
+        //전용함수
+        // $('#btn1').click(function(){
+        //     alert();
+        // });
+
+        //범용
+        // $('#btn2').on('mouseover',function(){
+        //     alert();
+        // })
+
+        // $('#btn3').click(() => {
+        //     $('#btn1').off('click');
+        //     $('#btn2').off('mouseover');
+        // })
+
+        //버튼 3개 동일한 이벤트 추가
+        //dom
+        document.querySelectorAll('.btn').forEach(btn => {
+            btn.onclick = function(){
+                alert(event.target.value);
+            };
+        });
+
+        //jQuery
+        $('.btn').click(()=>{
+            alert(event.target.value);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <!--ex41_object-->
+    
+    <script>
+    /*    
+    class User{
+        public String name;
+        public int age;
+        public String address;
+
+    }
+    */
+        const hong = new Object(); //빈객체
+        console.log(hong);
+
+        hong.name='홍길동';
+        hong.age=20;
+        hong.address='서울시';
+        
+        console.log(hong);
+        console.log(hong.name);
+        console.log(hong.age);
+        console.log(hong.address);
+
+        delete hong.address;
+        console.log(hong);
+
+
+        hong['tel'] = '010-1111-1111';
+        hong['primary-phone']
+        console.log(hong);
+
+        console.clear();
+
+        const dog =new Object();
+
+        dog.name ='강아지';
+        dog.age =3;
+        dog.address ='서울시';
+
+        const cat =new Object();
+
+        cat.name ='송아지';
+        cat.age =5;
+        cat.address ='안양시';
+
+
+        const lee = new Object();
+
+        lee.name ='이순신'
+        lee.age ='25'
+        lee.address ='서울시 강동구'
+        
+        const park = {};
+
+        park.name ='이지원'
+        park.age ='35'
+        park.address ='안양시 강동구'
+
+        console.clear();
+        console.log(lee); //HTML
+        console.dir(park);//JSON
+        console.table(lee);
+        console.table(park);
+
+        const you= {name:'유재석',
+                    age:40,
+                    address:'서울시 중구'
+        };
+        console.table(you);
+
+        you.gender='m';
+        console.table(you);
+
+        window.gender='f';
+        console.log(window.gender);
+        console.dir(window);
+
+        // const turtle={
+        //     name: '거북이',
+        //     age:300,
+        //     sido:'서울시',
+        //     gugun: '강남구'
+        //     dong:'역삼동'
+        //     bunji:'한독빌딩'
+        // }
+
+        const address={
+            sido:'서울시',
+            gugun: '강남구',
+            dong:'역삼동',
+            bunji:'한독빌딩'
+        }
+        const turtle={  
+            name:'거북이',//문자열
+            age:300, //숫자
+            address:address//객체
+        }
+
+        console.clear();
+        console.log(turtle); //HTML
+        console.dir(turtle);
+
+        const puppy ={
+            name:'멍멍잉',
+            age:40,
+            address: {
+            sido:'서울시',
+            gugun: '강남구',
+            dong:'역삼동'
+            },
+            nick: ['꼬물이','인절미']
+        }
+
+        console.log(puppy.nick[1]); //H
+
+        //고양이 객체 3마리 관리
+        const catty1={
+            name:'냥이1',
+            age:'2'
+        }
+        const catty2={
+            name:'냥이2',
+            age:'1'
+        }
+        const catty3={
+            name:'냥이3',
+            age:'1.5'
+        }
+        
+        const clist1=[];
+        clist1[0]=catty1;
+        clist1[1]=catty2;
+        clist1[2]=catty3;
+
+        const clist2=[];
+        clist1.push(catty1);
+        clist1.push(catty2);
+        clist1.push(catty3);
+
+        const clist3 =[catty1,catty2, catty3];
+        
+        const clist4 =[
+            {
+                name:'냥이1',
+                age:'2'  
+            },
+            {
+                name:'냥이2',
+                age:'1'
+            },
+            {
+                name:'냥이3',
+                age:'1.5'
+            }
+        ];
+        console.clear();
+        //pig.name 프로퍼티 > 문자열
+        //pig.age 프로퍼티 > 숫자
+        //pig.eat 프로퍼티 > 함수
+        const pig={
+            name:'꿀꿀이',
+            age:5,
+            eat:function(){
+                console.log('꿀꿀꾸르'+this.name)
+            }
+        };
+
+        pig.sleep = function(){
+            console.log('쿨쿨zzz')
+        };
+
+
+        pig.eat();
+        pig.sleep();
+
+        function run(){
+            console.log('돼지가 달린다.' + this.name);
+        }
+        pig.run=run;
+        pig.run();
+        run();
+
+
+
+
+    </script>
+</body>
+</html>

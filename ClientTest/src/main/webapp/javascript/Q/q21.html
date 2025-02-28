@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset {
+            border: 1px solid black;
+            width: 250px;
+            background-color: bisque;
+        }
+        fieldset > div { margin: 10px; }
+        /* fieldset > div { padding: 10px; } */
+        fieldset > btn1{
+            background-color: purple;
+        }
+        #tbl1{
+            border: 1px solid black;
+            width: 410px;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+
+        #tbl1 td{
+            border: 1px solid black;
+            padding: 4px 10px;
+            border-collapse: collapse;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!---->
+    <h1>테이블</h1>
+    <fieldset>
+        <legend>색상 입력</legend>
+        <div> 
+            <label>색상 : </label> 
+            <input type="color" id="txtColor">
+        </div>
+        <div> 
+            <label>이름 : </label> 
+            <input type="text" id="txtName">
+        </div>
+        <div><input type="button" value="추가하기" id="btnAdd"></div>
+      
+    </fieldset>
+    
+    <table id="tbl1">
+        <thead>
+            <tr>
+                <th>색상명</th>
+                <th>미리보기</th>
+            </tr>
+        </thead>
+        <tbody id="tbody1">        
+            <tr>
+                <td>색상</td>
+                <td bgcolor="#FFFF00">#FFFF00</td>    
+            </tr>
+            <tr>
+				<td>풀색</td>
+				<td bgColor="#ACEF12">#ACEF12</td>
+			</tr>
+        </tbody>
+
+    </table>
+    <script>
+        var txtColor = document.getElementById('txtColor');
+        var txtname = document.getElementById('txtname');
+        var btnAdd = document.getElementById('btnAdd');
+        var tbody1 = document.getElementById('tbody1');
+        
+        btnAdd.onclick =function() {
+            var row = "<tr>";
+            row += "<td>";
+            row += txtName.value;
+            row += "</td>";
+			row += "<td bgColor='" + txtColor.value + "'>";
+			row += txtColor.value;
+			row += "</td>";
+			row += "</tr>";
+
+            tbody1.innerHTML += row;
+            txtColor.value="#000";
+            txtName.value="";
+
+        };
+        txtColor.onchange =function(){
+            txtName.focus();
+        };
+
+        txtName.onkeydown =function(){
+        if(event.keyCode ==13){
+            btnAdd.click();
+            }
+        };
+        
+        
+    </script>
+</body>
+</html>

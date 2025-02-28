@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/4018de258a.js" crossorigin="anonymous"></script>
+    <style>
+        
+
+        /* p > span {columns: red;} */
+        /* p > span::before{
+            content: '홍길동';
+            color: red;
+        }
+        p > span::after{
+            content: "홍길동";
+            color: blue;
+        } */
+        p > span::before{
+            /* content:''; */
+            font-family:FontAwesome;
+            font-weight: 400;
+            content: '\f272';
+            margin-right: 3px;
+        }
+
+        #list1 a::before{
+            content: '-';
+        }
+
+        #list2 li::after{
+            content: '원'
+        }
+
+    </style>
+</head>
+<body>
+    <!--ex42-->
+    <p>Lorem ipsum dolor sit amet, consectetur <span>adipisicing</span> elit. Excepturi ,<span>aspernatur,</span> ipsa ullam, officiis quisquam ab sunt accusantium deleniti nisi, rem cumque explicabo eius veniam <span>eveniet</span> qui quia expedita eaque deserunt!</p>
+    <hr>
+    <div id="list1">
+        <a href="#!">네이버</a>
+        <a href="#!">다음</a>
+        <a href="#!">구글</a>
+        <a href="#!">인스타</a>
+        <a href="#!">트위터</a>
+    </div>
+
+    <ul id="list2">
+        <li>2,000</li>
+        <li>3,500</li>
+        <li>4,000</li>
+        
+    </ul>
+</body>
+</html>

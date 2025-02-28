@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <!--window객체-->
+    <script>
+    var a =10;
+    window.b=20;
+
+    function f1(){ //전역함수(window 프로퍼티)
+        alert('f1');
+    }
+
+    function f2(){
+        var c;
+        function f3(){
+
+        }
+        f3();
+    }
+    // f3() --못불러
+    // const window={
+    //     a:10,
+    //     b:20,
+    //     f1:function(){}
+    // };
+
+    console.log(window);
+
+
+    console.log(a);
+    console.log(window.a);
+
+    // f1();
+    // window.f1()
+    //
+    let d =30;
+    const e =40;
+    const f2 = function(){
+
+    }
+    console.log(window);
+    
+    window.alert();
+    window.confirm()
+    window.prompt()
+    window.console.log()
+    window.setTimeout()
+    
+
+    consat hong={
+        name: '홍길동',
+        age:30,
+        address:'서울시 강남구',
+        hello:function(){
+            console.log();
+           }
+    }
+        for(let p in hong){
+		console.log(p,hong[p]);
+        }
+
+        const arr=[100,200,300,400,500];
+        console.log(arr.length);
+        console.log(arr[0]);
+
+        for(let p in arr){
+		console.log(p);
+        }
+
+        arr[10]=1000; 
+        console.log(arr[10]);
+    </script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            box-sizing: content-box;
+        }
+        #box1{ background-color: crimson;}
+        #box2{ background-color: gold;}
+        #box3{ background-color: dodgerblue;}
+        body{
+
+        }
+        #box2{
+            
+            /* transform: translate(100px,100px); */
+            /* transform: scale(1,-1); */
+            /* transform: rotate(-45deg); */
+            /* transform: skew(-40deg,40deg); */
+
+        }
+
+        /* #cat-list img:hover{
+            transform: translate(0,-15px);
+        } */
+         /* #cat-list:hover img{
+            transform: translate(0,-15px);
+         } */
+         /* #cat-list img:hover ~ img{
+            transform: translate(0,-15px);
+         } */
+         /* #cat-list:hover img:nth-child(odd){
+            transform: translate(0,-15px);
+         } */
+         /* #cat-list img:hover {
+            transform: scale(1.25,1.25) translate(0px, -50px);
+         } */
+         /* #cat-list img:hover {
+            transform: rotate(45deg);
+         } */
+         #cat-list img:hover {
+            transform: skew(0deg,-10deg);
+         }
+         input[type=text]{
+            margin: 100px 0;
+            font-size: 2em;
+            padding: 10px;
+            /* transform:scale(-2,2); */
+            /* transform: rotate(45deg); */
+
+         }
+    </style>
+</head>
+<body>
+    <!---->
+    <div id="box1" class="box">상자1</div>
+    <div id="box2" class="box">상자2</div>
+    <div id="box3" class="box">상자3</div>
+    
+    <hr>
+    <input type="text" >
+    
+    <h1>고양이</h1>
+    <div id="cat-list">
+        <img src="images/catty01.png">
+        <img src="images/catty02.png">
+        <img src="images/catty03.png">
+        <img src="images/catty04.png">
+        <img src="images/catty05.png">
+    </div>
+</body>
+</html>
